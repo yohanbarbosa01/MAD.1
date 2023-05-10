@@ -1,0 +1,85 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+header .navegation a{
+    position: relative;
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navegation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s;
+    }
+    .navegation a:hover::after{
+        transform: scale(1);
+        transform-origin: left;
+
+    }
+.navegation .login{
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.navegation .login:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all ease-in-out 0.5s;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: url(https://wallpapercave.com/wp/wp9160535.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+
+ul{
+    position: relative;
+    top: 650px;
+    color: #fff;
+}
+
+
