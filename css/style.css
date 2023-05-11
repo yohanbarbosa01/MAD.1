@@ -73,13 +73,14 @@ body{
     background: url(https://wallpapercave.com/wp/wp9160535.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    position: fixed;
+    background-attachment: fixed;
 }
 
-ul{
-    position: relative;
-    top: 650px;
+
+section p{
     color: #fff;
+    position: absolute;
+    top: 1000px;
+    left: 300px;
 }
-
 
